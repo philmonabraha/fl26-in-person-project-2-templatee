@@ -1,331 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Johnson - Frontend Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Philmon Abraha's web development portfolio. Exploring semantic HTML, Flexbox, CSS Grid, and responsive design.">
+  <title>Philmon Abraha — Web Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav id="navbar">
-        <div class="nav-brand">
-            <span>Alex Johnson</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Flexbox keeps the brand and navigation aligned; links wrap on small screens. -->
+  <nav id="navbar" aria-label="Main navigation">
+    <a class="nav-brand" href="#home"><span class="monogram">pa.</span> Philmon Abraha</a>
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Get in touch <span aria-hidden="true">↗</span></a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <header id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="status-dot"></span> A work in progress. Just like me.</p>
+        <h1>Learning to build.<br><em>Designing to connect.</em></h1>
+        <p class="hero-tagline">I'm Philmon, a student exploring the web—one thoughtful layout, small experiment, and new idea at a time.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="btn btn-secondary" href="#about">A little about me</a>
         </div>
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <!-- Mobile menu toggle (for bonus implementation) -->
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Alex Johnson</h1>
-            <p class="hero-subtitle">Frontend Developer & UI Designer</p>
-            <p class="hero-tagline">Creating beautiful, responsive web experiences with modern technologies</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
+      </div>
+      <div class="hero-note"><span>HTML + CSS</span><span>Built with curiosity · 2026</span></div>
+    </header>
+    <section id="about" class="section container">
+      <div class="section-heading"><p class="eyebrow">01 / A little introduction</p><h2>Small steps.<br>Better websites.</h2></div>
+      <div class="about-grid">
+        <div class="about-text"><p>I'm learning how to turn ideas into websites that feel clear, useful, and easy to explore. This portfolio is a space to document that process.</p><p>Right now, I'm working with semantic HTML and modern CSS, experimenting with how Flexbox and Grid make a page adapt to different screens.</p></div>
+        <aside class="learning-note"><span class="eyebrow">On my desk right now</span><h3>Modern CSS layouts</h3><p>In-Person Project 2</p><div class="project-tags"><span>Flexbox</span><span>CSS Grid</span><span>Responsive design</span></div></aside>
+      </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm a passionate frontend developer with 3 years of experience creating engaging digital experiences. I specialize in React, modern CSS, and responsive design patterns that work beautifully across all devices.</p>
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <span class="detail-icon">📍</span>
-                            <span>San Francisco, CA</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">✉️</span>
-                            <a href="mailto:alex@example.com">alex@example.com</a>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-icon">📱</span>
-                            <span>(555) 123-4567</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-availability">
-                    <h3>Currently Available For:</h3>
-                    <div class="availability-tags">
-                        <span class="tag tag-available">Freelance</span>
-                        <span class="tag tag-available">Full-Time</span>
-                        <span class="tag tag-available">Remote</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
     <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2>Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">⚛️</span>
-                        <h3 class="skill-name">React</h3>
-                    </div>
-                    <div class="skill-category">Frontend Framework</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 90%"></div>
-                    </div>
-                    <span class="skill-percentage">90%</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">🎨</span>
-                        <h3 class="skill-name">CSS3</h3>
-                    </div>
-                    <div class="skill-category">Styling</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 95%"></div>
-                    </div>
-                    <span class="skill-percentage">95%</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">📱</span>
-                        <h3 class="skill-name">Responsive Design</h3>
-                    </div>
-                    <div class="skill-category">Design</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 88%"></div>
-                    </div>
-                    <span class="skill-percentage">88%</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">🚀</span>
-                        <h3 class="skill-name">JavaScript</h3>
-                    </div>
-                    <div class="skill-category">Programming</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 85%"></div>
-                    </div>
-                    <span class="skill-percentage">85%</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">🎯</span>
-                        <h3 class="skill-name">Figma</h3>
-                    </div>
-                    <div class="skill-category">Design Tools</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 80%"></div>
-                    </div>
-                    <span class="skill-percentage">80%</span>
-                </div>
-
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-icon">🌐</span>
-                        <h3 class="skill-name">Node.js</h3>
-                    </div>
-                    <div class="skill-category">Backend</div>
-                    <div class="skill-level">
-                        <div class="skill-progress" style="--skill-level: 75%"></div>
-                    </div>
-                    <span class="skill-percentage">75%</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">02 / My growing toolkit</p><h2>The foundations first.</h2><p>What I'm practicing, and where it fits.</p></div>
+        <!-- auto-fit adapts this grid without breakpoint-specific column counts. -->
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span><h3>Semantic HTML</h3><p>Meaningful structure, accessible links, and content with a clear hierarchy.</p><span class="skill-category">Structure</span></article>
+          <article class="skill-card"><span class="skill-icon" aria-hidden="true">↔</span><h3>Flexbox</h3><p>Flexible navigation, centered content, and components that wrap naturally.</p><span class="skill-category">One-dimensional layout</span></article>
+          <article class="skill-card"><span class="skill-icon" aria-hidden="true">⊞</span><h3>CSS Grid</h3><p>Adaptive card galleries and featured projects with room to stand out.</p><span class="skill-category">Two-dimensional layout</span></article>
+          <article class="skill-card"><span class="skill-icon" aria-hidden="true">↗</span><h3>Responsive design</h3><p>Fluid type, flexible spacing, and layouts for screens big and small.</p><span class="skill-category">Every screen</span></article>
         </div>
+      </div>
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card featured">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4f46e5/ffffff?text=E-Commerce+App" alt="E-Commerce Platform">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <span>🔗</span> Live Demo
-                                </a>
-                                <a href="#" class="project-link">
-                                    <span>💻</span> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">E-Commerce Platform</h3>
-                            <span class="project-category">Full-Stack</span>
-                        </div>
-                        <p class="project-description">A modern e-commerce platform built with React and Node.js, featuring shopping cart, payment integration, and admin dashboard.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">Node.js</span>
-                            <span class="project-tag">MongoDB</span>
-                            <span class="project-tag">Stripe</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/059669/ffffff?text=Weather+App" alt="Weather Dashboard">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <span>🔗</span> Live Demo
-                                </a>
-                                <a href="#" class="project-link">
-                                    <span>💻</span> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Weather Dashboard</h3>
-                            <span class="project-category">Frontend</span>
-                        </div>
-                        <p class="project-description">Clean and intuitive weather dashboard with location search, 7-day forecast, and beautiful animations.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">CSS3</span>
-                            <span class="project-tag">API</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/dc2626/ffffff?text=Task+Manager" alt="Task Management App">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <span>🔗</span> Live Demo
-                                </a>
-                                <a href="#" class="project-link">
-                                    <span>💻</span> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Task Management App</h3>
-                            <span class="project-category">Web App</span>
-                        </div>
-                        <p class="project-description">Productivity app with drag-and-drop functionality, project collaboration, and deadline tracking.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">TypeScript</span>
-                            <span class="project-tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/7c3aed/ffffff?text=Portfolio+Site" alt="Portfolio Website">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link">
-                                    <span>🔗</span> Live Demo
-                                </a>
-                                <a href="#" class="project-link">
-                                    <span>💻</span> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 class="project-title">Creative Portfolio</h3>
-                            <span class="project-category">Design</span>
-                        </div>
-                        <p class="project-description">Responsive portfolio website for a graphic designer with interactive galleries and smooth animations.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML5</span>
-                            <span class="project-tag">CSS3</span>
-                            <span class="project-tag">GSAP</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="projects" class="section container">
+      <div class="section-heading"><p class="eyebrow">03 / Learning by making</p><h2>A few things I've built.</h2><p>Coursework and layout studies, from the basics onward.</p></div>
+      <!-- Grid positions the cards; Flexbox aligns the content inside each card. -->
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-image portfolio-art" aria-hidden="true"><div class="mini-browser"><div class="browser-bar"><i></i><i></i><i></i></div><div class="mini-body"><span class="mini-label">PHILMON / PORTFOLIO</span><strong>Ideas into<br><em>interfaces.</em></strong><span class="mini-button">Explore the work ↗</span><div class="mini-grid"><i></i><i></i><i></i></div></div></div></div>
+          <div class="project-content"><div class="project-header"><h3>Modern layout portfolio</h3><span class="project-number">01</span></div><p>The site you're exploring. A fresh portfolio built around flexible components, an adaptive skills grid, and an asymmetric project gallery.</p><div class="project-tags"><span>HTML</span><span>CSS Grid</span><span>Flexbox</span></div><a class="text-link" href="#home">Explore this page <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image profile-art" aria-hidden="true"><div class="profile-sheet"><div class="avatar">PA</div><strong>Hello, web.</strong><span></span><span></span><div class="profile-fields"><i></i><i></i></div></div></div>
+          <div class="project-content"><div class="project-header"><h3>Personal profile</h3><span class="project-number">02</span></div><p>My first steps with page structure, the CSS box model, and a contact form.</p><div class="project-tags"><span>HTML</span><span>CSS basics</span></div><a class="text-link" href="https://github.com/philmonabraha/fl26-in-person-project-1-template">View Project 1 repository <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card study-card">
+          <div class="project-content"><div class="project-header"><h3>The flexible grid</h3><span class="project-number">03</span></div><p>A layout study within this project. Resize the page to see the skills rearrange themselves, without column breakpoints.</p><div class="grid-study" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="project-tags"><span>auto-fit</span><span>minmax()</span></div><a class="text-link" href="#skills">Explore the skills grid <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
-
-                <form class="contact-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group form-group-full">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject">
-                        </div>
-
-                        <div class="form-group form-group-full">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <div class="form-group form-group-full">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <section id="contact" class="contact-section">
+      <div class="container contact-content"><div><p class="eyebrow">04 / Keep in touch</p><h2>Good things start<br>with a hello.</h2><p>Follow along as I keep learning and building.</p></div><a class="btn btn-primary" href="https://github.com/philmonabraha">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Dribbble</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+  </main>
+  <footer class="container footer"><p>© 2026 Philmon Abraha</p><p>Made with HTML, CSS & curiosity.</p><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>

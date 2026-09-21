@@ -1,3 +1,31 @@
+# In-Person Project 2 — Philmon Abraha
+
+Fresh start (Option B), using the course template. Open `index.html` in a browser; no installation or build step is needed.
+
+## Implemented
+- Flexbox navigation, centered hero, wrapping buttons, and card content.
+- Skills grid using `auto-fit` and `minmax()` without column breakpoints.
+- Asymmetric project gallery with a featured card and responsive span resets.
+- Fluid typography, keyboard focus indicators, skip link, and reduced-motion support.
+- Local CSS illustrations with no external asset dependencies.
+
+The project links point to this page's sections and the existing Project 1 repository. Contact links to GitHub; no nonfunctional contact form is included.
+
+## Verification
+Internal anchors, unique IDs, stylesheet references, and `git diff --check` were checked. Browser visual verification remains to be done. Check at 320px, 768px, and 1440px: no horizontal scrolling, visible navigation, and a single-column project gallery on mobile.
+
+## Publish your fork
+This local checkout was cloned from the course template. Create a public fork named `in-person-project-2-philmonabraha` at https://github.com/UCB-INFO-FRONTEND-WEBARCH/fl26-in-person-project-2-template/fork. From this project's folder, run:
+
+```sh
+git remote set-url origin https://github.com/philmonabraha/in-person-project-2-philmonabraha.git
+git push -u origin main
+```
+
+After the push succeeds, submit the repository URL: https://github.com/philmonabraha/in-person-project-2-philmonabraha
+
+---
+
 # Week 4: Modern Layout Portfolio
 ## Transform Your Portfolio with Flexbox, Grid, and Responsive Design
 
