@@ -14,15 +14,19 @@ The project links point to this page's sections and the existing Project 1 repos
 ## Verification
 Internal anchors, unique IDs, stylesheet references, and `git diff --check` were checked. Browser visual verification remains to be done. Check at 320px, 768px, and 1440px: no horizontal scrolling, visible navigation, and a single-column project gallery on mobile.
 
-## Publish your fork
-This local checkout was cloned from the course template. Create a public fork named `in-person-project-2-philmonabraha` at https://github.com/UCB-INFO-FRONTEND-WEBARCH/fl26-in-person-project-2-template/fork. From this project's folder, run:
+## Repository and submission
+
+Project repository: https://github.com/philmonabraha/fl26-in-person-project-2-templatee
+
+From this project's folder, commit and push future changes with:
 
 ```sh
-git remote set-url origin https://github.com/philmonabraha/in-person-project-2-philmonabraha.git
-git push -u origin main
+git add .
+git commit -m "Update portfolio"
+git push
 ```
 
-After the push succeeds, submit the repository URL: https://github.com/philmonabraha/in-person-project-2-philmonabraha
+Submit the repository URL above as the assignment Website URL.
 
 ---
 
